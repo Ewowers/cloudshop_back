@@ -8,7 +8,10 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/ast_cloud_shop'),
+    MongooseModule.forRoot(
+      'mongodb+srv://ew:ew@cluster0.lebfx.mongodb.net/myFirstDatabase',
+    ),
+    //MongooseModule.forRoot('mongodb://localhost:27017/ast_cloud_shop'),
     UserModule,
     ProductModule,
     HistoryModule,
